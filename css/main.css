@@ -8,4 +8,29 @@ body {
 .wrapper {
   width: 55vw;
   margin: 0 auto;
+  text-align: center;
+}
+
+.image-header {
+  margin-top: 15vh;
+  height: 30vh;
+  border: 2px solid #404040;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.image-header img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 270px;
+  border-radius: 10px;
+}
+
+.avatar {
+  height: 20vh;
+}
+.avatar img {
+  height: 100%;
 }/*# sourceMappingURL=main.css.map */
