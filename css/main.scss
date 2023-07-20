@@ -28,7 +28,7 @@ body{
 
 .image-header{
     margin-top: 13vh;
-    height: 33vh;
+    height: 250px;
     border: 2px solid $border-color;
     border-radius: 10px;
     overflow: hidden;
@@ -185,6 +185,7 @@ body{
 
     .main-image{
         width: 100%;
+        margin: 0 auto;
         margin-top: 8em;
         img{
             width: 100%;
@@ -237,7 +238,12 @@ body{
 
     .middle-block{
         box-shadow: 0px -60em 100px -10em #000000 inset;
+
+        .main-image{
+            width: 80%;
+        }
     }
+
 
 }
 

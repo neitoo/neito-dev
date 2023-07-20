@@ -17,7 +17,7 @@ body {
 
 .image-header {
   margin-top: 13vh;
-  height: 33vh;
+  height: 250px;
   border: 2px solid #404040;
   border-radius: 10px;
   overflow: hidden;
@@ -166,6 +166,7 @@ body {
 }
 .middle-block .main-image {
   width: 100%;
+  margin: 0 auto;
   margin-top: 8em;
 }
 .middle-block .main-image img {
@@ -204,6 +205,9 @@ body {
   }
   .middle-block {
     box-shadow: 0px -60em 100px -10em #000000 inset;
+  }
+  .middle-block .main-image {
+    width: 80%;
   }
 }
 @media only screen and (min-width: 1100px) {
