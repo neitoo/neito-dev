@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/source/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <title>neito<dev></title>
 </head>
 <body>
     <div class="wrapper">
         <header>
             <div class="image-header">
-                <img src="../source/head-img.jpg" alt="Шапка сайта">
+                <img src="source/head-img.jpg" alt="Шапка сайта">
             </div>
             <div class="avatar">
-                <img src="../source/avatar.jpg" alt="Аватар">
+                <img src="source/avatar.jpg" alt="Аватар">
             </div>
+            
             <div class="text-info">
                 <h3 class="nickname">neito</h3>
                 <h1 class="fullname">Прохоренков Никита</h1>
@@ -30,31 +31,43 @@
             <div class="menu">
                 <ul>
                     <li>
-                        <img src="../source/portfolio.svg" alt="Иконка портфолио">
-                        <p class="menu-title">Портфолио</p>
-                        <p class="menu-description">Смотрите мое портфолио</p>
+                        <img src="source/portfolio.svg" alt="Иконка портфолио">
+                        <div class="text-menu">
+                            <p class="menu-title">Портфолио</p>
+                            <p class="menu-description">Смотрите мое портфолио</p>
+                        </div>
                     </li>
                     <li>
-                        <img src="../source/about.svg" alt="Иконка обо мне">
-                        <p class="menu-title">Обо мне</p>
-                        <p class="menu-description">Узнайте больше обо мне</p>
+                        <img src="source/about.svg" alt="Иконка обо мне">
+                        <div class="text-menu">
+                            <p class="menu-title">Обо мне</p>
+                            <p class="menu-description">Узнайте больше обо мне</p> 
+                        </div>
                     </li>
                 </ul>
             </div>
         </nav>
-        <main>
-            <h2>"Будь профессионалом!"<br>Конечно</h2>
-            <p>Привет! Меня зовут Прохоренков Никита. 
-                Я занимаюсь разработкой Android-приложений, Web-разработкой, UI/UX дизайном... 
-                Помимо этих направлений, у меня есть опыт по созданию Desktop приложений и игр. 
-                На данный момент я постоянно прокачиваю свои навыки кодинга.</p>
-            <img src="/source/image 1.jpg" alt="Изображение питомца">
-        </main>
-        <footer>
-            <div class="author">
-                <p>© 2023 neito</p>
-            </div>
-        </footer>
     </div>
+    <div class="middle-block">
+        <div class="wrapper">
+            <main>
+                <h2>"Будь профессионалом!"<br><span>Конечно</span>.</h2>
+                <p>Привет! Меня зовут Прохоренков Никита. 
+                    Я занимаюсь разработкой Android-приложений, Web-разработкой, UI/UX дизайном... 
+                    Помимо этих направлений, у меня есть опыт по созданию Desktop приложений и игр. 
+                    На данный момент я постоянно прокачиваю свои навыки кодинга.</p>
+                <div class="main-image">
+                    <img src="source/image-1.jpg" alt="Изображение питомца">
+                </div>
+            </main>
+            <footer>
+                <div class="author">
+                    <p>© 2023 neito</p>
+                </div>
+            </footer>
+        </div>
+        
+    </div>
+        
 </body>
 </html>
