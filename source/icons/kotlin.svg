@@ -1,0 +1,15 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="kotlin" clip-path="url(#clip0_105_123)">
+<path id="Vector" d="M30 30H0V0H30L15 14.994L30 30Z" fill="url(#paint0_linear_105_123)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_105_123" x1="2999.73" y1="-0.329945" x2="0.300018" y2="3000.3" gradientUnits="userSpaceOnUse">
+<stop offset="0.00344" stop-color="#E44857"/>
+<stop offset="0.4689" stop-color="#C711E1"/>
+<stop offset="1" stop-color="#7F52FF"/>
+</linearGradient>
+<clipPath id="clip0_105_123">
+<rect width="30" height="30" fill="white"/>
+</clipPath>
+</defs>
+</svg>
