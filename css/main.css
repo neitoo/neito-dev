@@ -3,6 +3,13 @@
   box-sizing: border-box;
 }
 
+a,
+a:active,
+a:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   color: #FFFFFF;
