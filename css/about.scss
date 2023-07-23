@@ -22,6 +22,11 @@ a:hover{
     color: $white-text;
 }
 
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
 body{
     font-family: 'Manrope', sans-serif;
     color: $white-text;
@@ -82,3 +87,39 @@ main section{
         }
     }
 }
+
+.skills{
+    div{
+        margin: 15px 0;
+        padding: 15px;
+        background-color: $bg-block;
+        border-radius: 10px;
+
+        h3{
+            margin: 0;
+            line-height: 1em;
+            font-size: 16px;
+            font-weight: 800;
+        }
+
+        ul{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 100px);
+            justify-items: left;
+            align-items: center;
+            gap: 15px 30px;
+            li{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                height: 30px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}
+

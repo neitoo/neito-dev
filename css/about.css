@@ -10,6 +10,11 @@ a:hover {
   color: #FFFFFF;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   color: #FFFFFF;
@@ -62,4 +67,35 @@ main section p span {
 main section p .bold-text-link {
   font-size: 1.2em;
   font-weight: 600;
+}
+
+.skills div {
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #131313;
+  border-radius: 10px;
+}
+.skills div h3 {
+  margin: 0;
+  line-height: 1em;
+  font-size: 16px;
+  font-weight: 800;
+}
+.skills div ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+  justify-items: left;
+  align-items: center;
+  gap: 15px 30px;
+}
+.skills div ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30px;
+}
+.skills div ul li img {
+  width: 30px;
+  height: 30px;
+  padding-right: 5px;
 }/*# sourceMappingURL=about.css.map */
