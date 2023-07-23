@@ -1,0 +1,84 @@
+$bg-color: #0A0A0A;
+$border-color: #404040;
+$hover-color: #2a2a2a;
+$white-text: #FFFFFF;
+$black: #000000;
+$gray-text: #C6C6C6;
+$red-text: #F4616B;
+$bg-block: #131313;
+$gray-block: #151515;
+$hr-color: #4D4D4D;
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+a,
+a:active,
+a:hover{
+    text-decoration: none;
+    color: $white-text;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    color: $white-text;
+    background-color: $bg-color;
+}
+
+.wrapper{
+    width: 85vw;
+    margin: 0 auto;
+    text-align: left;
+}
+
+header{
+    padding-top: 30vw;
+
+    h1{
+        font-size: 1.9em;
+        font-weight: 500;
+        line-height: 1em;
+
+        span{
+            color: $red-text;
+            font-weight: 800;
+        }
+    }
+}
+
+main section{
+    padding-top: 60px;
+
+    h2{
+        width: 100%;
+        font-size: 1.7em;
+        font-weight: 700;
+        line-height: 1em;
+    }
+
+    hr{
+        padding: 0 20px 0 20px;
+        height: 2px;
+        border: none;
+        background-color: $hr-color;
+    }
+
+    p{
+        color: $gray-text;
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 1.2em;
+
+        span{
+            color:$red-text;
+        }
+
+        .bold-text-link{
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    }
+}
