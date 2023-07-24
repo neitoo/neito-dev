@@ -83,7 +83,7 @@ main section p .bold-text-link {
 }
 .skills div ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 100px);
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   justify-items: left;
   align-items: center;
   gap: 15px 30px;
@@ -98,4 +98,92 @@ main section p .bold-text-link {
   width: 30px;
   height: 30px;
   padding-right: 5px;
+}
+
+.hobby div p {
+  line-height: 1.5em;
+}
+.hobby ul li {
+  padding: 15px;
+  margin: 15px 0;
+  background-color: #131313;
+  border-radius: 10px;
+}
+.hobby ul li p {
+  color: #FFFFFF;
+  margin: 0;
+  line-height: 1em;
+}
+
+.contacts-block {
+  display: flex;
+  justify-content: center;
+}
+.contacts-block ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.contacts-block ul li a {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  align-items: center;
+  background-color: #131313;
+  border-radius: 10px;
+}
+.contacts-block ul li a img {
+  margin-right: 15px;
+}
+.contacts-block ul li a p {
+  margin: 0;
+}
+.contacts-block ul li a:hover, .contacts-block ul li a:active {
+  background-color: #2a2a2a;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+footer {
+  padding: 15vh 0 6vh 0;
+  display: flex;
+  justify-content: center;
+}
+footer .author {
+  background-color: #131313;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 0px 2em;
+}
+footer .author p {
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 0em;
+}
+
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    width: 68vw;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .wrapper {
+    width: 78vw;
+  }
+  header h1 {
+    font-size: 2.6em;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    width: 54vw;
+  }
+  header h1 {
+    font-size: 3em;
+  }
+  main section h2 {
+    font-size: 1.9em;
+  }
 }/*# sourceMappingURL=about.css.map */
