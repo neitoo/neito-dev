@@ -124,33 +124,39 @@ body{
         flex-direction: column;
         list-style-type: none;
         li{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 3px;
-            padding: 1.1em;
             margin: 5px 0px;
             background-color: $bg-block;
             border-radius: 10px;
             transition: transform 0.2s ease;
 
-            .text-menu{
-                text-align: left;
-                line-height: .3em;
+            .link-block{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items:baseline;
+                gap: 3px;
+                padding: 1.1em;
+            
 
-                .menu-title{
-                    font-size: 1.2em;
-                    font-style: normal;
-                    font-weight: 700;
-                }
+                .text-menu{
+                    text-align: left;
+                    line-height: .3em;
 
-                .menu-description{
-                    color: $gray-text;
-                    font-size: 0.8em;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: .8em;
+                    .menu-title{
+                        font-size: 1.2em;
+                        font-style: normal;
+                        font-weight: 700;
+                    }
+
+                    .menu-description{
+                        color: $gray-text;
+                        font-size: 0.8em;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: .8em;
+                    }
                 }
             }
 
@@ -202,6 +208,20 @@ body{
     }
 }
 
+@media only screen and (min-width: 600px){
+    .menu {
+        
+        ul{
+            flex-grow: 0;
+            justify-content: center;
+            flex-direction: row;
+            li{
+                margin: 5px 7px;
+            }
+        }  
+    }
+    
+}
 
 @media only screen and (min-width: 800px){
     .wrapper{
