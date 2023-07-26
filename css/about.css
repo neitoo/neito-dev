@@ -15,6 +15,10 @@ ul {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   color: #FFFFFF;
@@ -61,7 +65,7 @@ main section p {
   font-size: 1em;
   line-height: 1.2em;
 }
-main section p span {
+main section p .bold-text-link {
   color: #F4616B;
 }
 main section p .bold-text-link {
@@ -125,21 +129,25 @@ main section p .bold-text-link {
   flex-wrap: wrap;
   gap: 15px;
 }
-.contacts-block ul li a {
+.contacts-block ul li {
+  background-color: #131313;
+  border-radius: 10px;
+}
+.contacts-block ul li .link-block {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   padding: 15px;
   align-items: center;
-  background-color: #131313;
-  border-radius: 10px;
 }
-.contacts-block ul li a img {
+.contacts-block ul li .link-block img {
   margin-right: 15px;
 }
-.contacts-block ul li a p {
+.contacts-block ul li .link-block p {
   margin: 0;
 }
-.contacts-block ul li a:hover, .contacts-block ul li a:active {
+.contacts-block ul li:hover, .contacts-block ul li:active {
   background-color: #2a2a2a;
   transform: scale(1.05);
   cursor: pointer;
