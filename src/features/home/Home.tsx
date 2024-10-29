@@ -1,4 +1,5 @@
 import { TextHeader } from '@components/textHeader';
+import { CopyText } from '@components/copyText';
 import flash from '@images/interface-essential-flash.svg';
 import scan from '@images/interface-essential-iris-scan.svg';
 
@@ -7,12 +8,15 @@ import tools from '@images/interface-essential-hammer-1.svg';
 import module from '@images/coding-apps-websites-module.svg';
 import addition from '@images/coding-apps-websites-plugin.svg';
 
+import telegram from '@images/telegram.svg';
+import mail from '@images/mail.svg';
+
 import { useRef } from 'react';
 
 
 const Home = () => {
     const text = 'neito | dev';
-    const sectionRef = useRef<HTMLUListElement>(null);
+    const sectionRef = useRef<HTMLDivElement>(null);
     const handleScroll = () => {
         sectionRef.current?.scrollIntoView({ behavior: 'smooth' });
     };
@@ -45,9 +49,9 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="content__container mt-64">
-                <p className="text-xl mb-12">Технологии в которых я разбираюсь</p>
-                <ul ref={sectionRef} className="flex flex-col gap-12 w-full">
+            <section ref={sectionRef} className="content__container mt-64">
+                <p className="text-3xl mb-12">Технологии в которых я разбираюсь</p>
+                <ul className="flex flex-col gap-12 w-full">
                     <li className="list__skills">
                         <div className='skill__image-block'>
                             <img className='size-12' src={coding} alt="" />
@@ -99,6 +103,36 @@ const Home = () => {
                 </ul>
             </section>
             
+            <section className="content__container">
+                <p className="text-3xl mb-12">Обо мне</p>
+            </section>
+
+            <section className="content__container">
+                <p className="text-3xl mb-12">Контакты</p>
+
+                <p className="text-xl text-center">
+                Не стесняйтесь писать мне, если у вас есть вопросы или предложения. Я всегда открыт для общения и новых идей. 
+                </p>
+
+                <p className='text-xl text-center mt-10'>
+                    Связаться со мной можно так:
+                </p>
+
+                <div className='flex flex-row mt-5 w-full justify-center'>
+                    <div className='flex flex-col gap-5 items-left'>
+                        <div className='flex flex-row gap-3 items-center'>
+                            <a href="https://t.me/neitoo" title='Открыть телеграм аккаунт'>
+                                <img src={telegram} alt="Telegram" />
+                            </a>
+                            <CopyText text="@neitoo" />
+                        </div>
+                        <div className='flex flex-row gap-3 items-center'>
+                            <img src={mail} alt="Email" />
+                            <CopyText text="neito.dev@gmail.com"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     );
 }
