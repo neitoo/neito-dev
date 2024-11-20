@@ -38,7 +38,7 @@ const Home = () => {
                 <div className="flex flex-col items-center gap-16 flex-nowrap">
                     <img src={scan} className="select-none size-14 animate-appearance"/>
                     <p className="text-xl text-center">
-                        Моё имя <span className="bg-red-700 px-2">Никита</span>. Занимаюсь разработкой сайтов и мобильных приложений. <br/>Тут я делюсь своими проектами и идеями, которые могут вас заинтересовать.
+                        Моё имя <span className="bg-red-700 px-2">Никита</span>. Занимаюсь разработкой сайтов и мобильных приложений. <br/>Тут я делюсь своими проектами, которые могут вас заинтересовать.
                     </p>
                 </div>
             </section>
@@ -101,10 +101,6 @@ const Home = () => {
                         </ul>
                     </li>
                 </ul>
-            </section>
-            
-            <section className="content__container">
-                <p className="text-3xl mb-12">Обо мне</p>
             </section>
 
             <section className="content__container">
