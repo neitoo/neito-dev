@@ -1,4 +1,3 @@
-import { TextHeader } from '@components/textHeader';
 import { CopyText } from '@components/copyText';
 import flash from '@images/interface-essential-flash.svg';
 import scan from '@images/interface-essential-iris-scan.svg';
@@ -12,10 +11,10 @@ import telegram from '@images/telegram.svg';
 import mail from '@images/mail.svg';
 
 import { useRef } from 'react';
+import { DecryptText } from '@components/dectyptText';
 
 
 const Home = () => {
-    const text = 'neito | dev';
     const sectionRef = useRef<HTMLDivElement>(null);
     const handleScroll = () => {
         sectionRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -24,7 +23,7 @@ const Home = () => {
     return (
         <main className="main__container">
             <section className="content__container">
-                <TextHeader text={text} />
+                <h1 className="text-2xl 2xl:text-5xl uppercase"><DecryptText text="neito | dev" duration={1000}/></h1>
             </section>
 
             <section className="content__container">
