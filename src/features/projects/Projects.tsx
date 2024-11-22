@@ -1,14 +1,17 @@
-import { TextHeader } from "@components/textHeader";
+import { DecryptText } from "@components/dectyptText";
+import { ProjectsList } from "@components/projectsList";
 
 const Projects = () => {
-    const text = 'neito | проекты';
 
     return (
         <main className="main__container">
             <section className="content__container">
-                <TextHeader text={text} />
+                <h1 className="text-2xl 2xl:text-5xl uppercase"><DecryptText text="neito | проекты" duration={1000}/></h1>
             </section>
+            
+            <ProjectsList/>
         </main>
+
     );
 }
 
