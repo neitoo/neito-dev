@@ -1,5 +1,4 @@
 import { CopyText } from '@components/copyText';
-import flash from '@images/interface-essential-flash.svg';
 import scan from '@images/interface-essential-iris-scan.svg';
 
 import coding from '@images/coding-apps-websites-programming-hold-code.svg';
@@ -11,7 +10,6 @@ import telegram from '@images/telegram.svg';
 import mail from '@images/mail.svg';
 
 import { useRef } from 'react';
-import { DecryptText } from '@components/dectyptText';
 
 
 const Home = () => {
@@ -23,19 +21,22 @@ const Home = () => {
     return (
         <main className="main__container">
             <section className="content__container">
-                <h1 className="text-2xl 2xl:text-5xl uppercase"><DecryptText text="neito | dev" duration={1000}/></h1>
+                <h1 className="text-2xl 2xl:text-5xl uppercase">
+                    neito | dev
+                </h1>
             </section>
 
             <section className="content__container">
                 <div className="flex gap-2 flex-nowrap">
-                    <p className="text-3xl">Привет!</p>
-                    <img src={flash} className="select-none size-9"/>
+                    <p className="text-3xl">
+                        Привет!
+                    </p>
+                    <img src={scan} className="select-none size-9 animate-appearance"/>
                 </div>
             </section>
 
             <section className="content__container">
-                <div className="flex flex-col items-center gap-16 flex-nowrap">
-                    <img src={scan} className="select-none size-14 animate-appearance"/>
+                <div className="flex flex-col items-center gap-16 flex-nowrap py-14">
                     <p className="text-xl text-center">
                         Моё имя <span className="bg-red-700 px-2">Никита</span>. Занимаюсь разработкой сайтов и мобильных приложений. <br/>Тут я делюсь своими проектами, которые могут вас заинтересовать.
                     </p>
@@ -48,7 +49,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section ref={sectionRef} className="content__container mt-64">
+            <section ref={sectionRef} className="content__container mt-80">
                 <p className="text-3xl mb-12">Технологии в которых я разбираюсь</p>
                 <ul className="flex flex-col gap-12 w-full">
                     <li className="list__skills">
