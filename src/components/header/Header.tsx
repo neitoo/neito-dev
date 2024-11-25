@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <header className={`flex w-full flex-col z-50 fixed transition-colors duration-150 ${isMobileMenuOpen ? 'bg-zinc-950' : ''} 2xl:w-52 2xl:h-full`}>
-      <div className="flex justify-between py-3 px-6 z-50 2xl:justify-start">
+      <div className="flex justify-between pt-6 py-3 px-6 z-50 2xl:justify-start">
         <img src={logo} alt="Логотип neito" className="size-12 animate-spin360twice" />
 
         <button
