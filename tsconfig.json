@@ -12,6 +12,7 @@
       "@api/*": ["src/api/*"],
     },
     "strict": true,
+    "noEmit": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
     "jsx": "react-jsx",
