@@ -4,3 +4,4 @@ declare module '@images/*';
 declare module '@hooks/*';
 declare module '@interfaces/*';
 declare module '@api/*';
+declare module '@pages/*';

@@ -10,6 +10,7 @@
       "@hooks/*": ["src/hooks/*"],
       "@interfaces/*": ["src/interfaces/*"],
       "@api/*": ["src/api/*"],
+      "@pages/*": ["src/pages/*"],
     },
     "strict": true,
     "noEmit": true,
