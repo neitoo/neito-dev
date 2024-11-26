@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { Home } from './features/home'
-import { ProjectDetails } from './features/project'
-import { Projects } from './features/projects'
-import { NotFound } from './features/notfound'
-import { Layout } from './components/layout'
+import { Home } from '@pages/home'
+import { ProjectDetails } from '@pages/project'
+import { Projects } from '@pages/projects'
+import { NotFound } from '@pages/notfound'
+import { Layout } from '@components/layout'
 
 function App() {
 
