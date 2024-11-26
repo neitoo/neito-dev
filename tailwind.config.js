@@ -1,3 +1,5 @@
+import { transform } from 'typescript';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -15,8 +17,11 @@ export default {
       },
       animation: {
         spin360twice: 'spin360twice 1s ease-in-out forwards',
-        appearance: 'appearance 3s ease-in-out infinite',
-        wheel: 'wheel 2s infinite'
+        appearance: 'appearance 3s ease-in-out',
+        wheel: 'wheel 2s infinite',
+        starSmall: 'animStar 12s linear infinite',
+        starMedium: 'animStar 25s linear infinite',
+        starBig: 'animStar  38s linear infinite',
       },
       keyframes: {
         spin360twice: {
@@ -24,14 +29,22 @@ export default {
           '100%': { transform: 'rotate(720deg)' },
         },
         appearance: {
-          '0%, 100%': { opacity: '0' },
-          '50%': { opacity: '1' },
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
         },
         wheel: {
           'to': {
             opacity: 0,
             top: 60
           }
+        },
+        animStar: {
+          '0%' : { opacity: '0'},
+          '0%' : { transform: 'translateY(0)'},
+          '20%' : { opacity: '1'},
+          '87%' : { opacity: '1'},
+          '94%' : { opacity: '0'},
+          '100%' : { transform: 'translateY(-500px)'},
         }
       },
       
