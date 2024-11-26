@@ -43,3 +43,21 @@ body {
 .skills__names li {
   @apply flex-none uppercase before:content-["●"] before:mr-2
 }
+
+#stars, #stars2, #stars3 {
+  @apply top-0 left-0 absolute bg-transparent w-full h-[2000px];
+}
+
+#stars::after, #stars2::after, #stars3::after {
+  @apply content-[''] absolute top-0 left-0 bg-transparent shadow-none
+}
+
+#stars::after {
+  @apply size-px
+}
+#stars2::after {
+  @apply size-0.5
+}
+#stars3::after {
+  @apply size-1
+}
