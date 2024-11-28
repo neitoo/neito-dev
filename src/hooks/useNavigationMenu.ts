@@ -3,23 +3,12 @@ import { useState } from "react";
 const useNavigationMenu = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isCompressed, setIsCompressed] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
   const [isRotated, setIsRotated] = useState(false);
-  const [shouldBeHidden, setShouldBeHidden] = useState(true);
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(prevState => {
-      const newState = !prevState;
-
-      if (newState) {
-          setShouldBeHidden(false);
-      } else {
-        setTimeout(() => {
-          setShouldBeHidden(true);
-        }, 150);
-      }
-      
-      return newState;
-    });
+    if (isAnimating) return;
+    setIsMobileMenuOpen((prevState) => !prevState);
 
     setIsCompressed(prev => {
       if (prev) {
@@ -35,6 +24,10 @@ const useNavigationMenu = () => {
       }
       return prev;
     });
+
+    setTimeout(() => {
+      setIsAnimating(false);
+    }, 300);
   };
 
   const handleLinkClick = () => {
@@ -45,7 +38,6 @@ const useNavigationMenu = () => {
 
   return {
     isMobileMenuOpen,
-    shouldBeHidden,
     isCompressed,
     isRotated,
     toggleMobileMenu,
