@@ -12,6 +12,10 @@ body {
   @apply w-full flex flex-col items-center pt-32 gap-16
 }
 
+.header__container {
+  @apply w-full flex flex-row justify-center py-10 px-6
+}
+
 .footer__container {
   @apply w-full flex flex-col items-center py-10 mt-10
 }
