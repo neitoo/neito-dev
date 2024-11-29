@@ -9,7 +9,7 @@ body {
 }
 
 .main__container {
-  @apply w-full flex flex-col items-center pt-32 gap-16
+  @apply w-full flex flex-col items-center
 }
 
 .header__container {
@@ -21,7 +21,7 @@ body {
 }
 
 .content__container {
-  @apply container px-6 flex flex-col items-center
+  @apply container px-6 flex flex-col items-start
 }
 
 .bg-error {
@@ -29,23 +29,23 @@ body {
 }
 
 .mouse-before {
-  @apply before:content-[''] before:size-3 before:absolute before:top-2.5 before:left-1/2 before:-translate-x-1/2 before:bg-white before:opacity-100 before:animate-wheel
+  @apply before:content-[''] before:size-3 before:absolute before:top-2.5 before:left-1/2 before:-translate-x-1/2 before:bg-white/50 before:opacity-100 before:animate-wheel
 }
 
 .list__skills {
-  @apply border-t border-white flex w-full
+  @apply rounded-md overflow-hidden border border-zinc-900 flex w-full flex-col
 }
 
 .skill__image-block {
-  @apply border-l border-r border-b border-white p-5 border-dashed flex justify-center items-center flex-none
+  @apply flex justify-start bg-neutral-900 items-center flex-none p-5 gap-3
 }
 
 .skills__names {
-  @apply flex gap-x-10 gap-y-4 p-5 flex-wrap
+  @apply flex gap-4 p-5 flex-wrap
 }
 
 .skills__names li {
-  @apply flex-none uppercase before:content-["●"] before:mr-2
+  @apply flex-none uppercase before:content-["●"] before:mr-2 border border-zinc-800 bg-zinc-900 px-3 py-px rounded-full opacity-0
 }
 
 #stars, #stars2, #stars3 {
@@ -57,11 +57,11 @@ body {
 }
 
 #stars::after {
-  @apply size-px
+  @apply size-px rounded-full
 }
 #stars2::after {
-  @apply size-0.5
+  @apply size-0.5 rounded-full
 }
 #stars3::after {
-  @apply size-1
+  @apply size-1 rounded-full
 }
