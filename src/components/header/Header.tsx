@@ -20,7 +20,7 @@ const Header = () => {
 
 
   return (
-    <header className={`header__container z-50 sticky top-0 transition-colors duration-150`}>
+    <header className={`header__container z-50 fixed top-0 transition-colors duration-150`}>
       <div className="content__container flex-col lg:flex-row justify-between px-6 py-3 rounded-md bg-zinc-900/50 backdrop-blur-sm">
         <div className="flex flex-row items-center justify-between w-full lg:w-fit">
           <div className="flex items-center gap-2">
@@ -70,14 +70,14 @@ const Header = () => {
           ))}
           <a 
             href="https://tyumen.hh.ru/"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             className="relative text-white select-none before:content-['/'] before:invisible hover:before:visible before:mr-2 hover:bg-white hover:text-black py-1 px-2"
             >
               CV
           </a>
           <a 
             href="https://github.com/neitoo"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             className="relative text-white select-none before:content-['/'] before:invisible hover:before:visible before:mr-2 hover:bg-white hover:text-black py-1 px-2"
             >
               GitHub
