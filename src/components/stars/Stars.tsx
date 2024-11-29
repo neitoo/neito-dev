@@ -23,7 +23,7 @@ const Stars = () => {
     `;
 
     return (
-        <div className="fixed top-0 w-screen h-screen overflow-hidden z-[-1]">
+        <div className="absolute left-0 top-0 w-full h-full overflow-hidden z-[-1]">
             <style>{starStyles}</style>
             <div id="stars"
                 className="absolute w-full h-full animate-starSmall"></div>
