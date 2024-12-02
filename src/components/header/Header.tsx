@@ -1,5 +1,4 @@
 import { Link, useLocation } from "react-router-dom";
-import logo from "@images/logo.svg";
 import useNavigationMenu from "@hooks/useNavigationMenu";
 
 const Header = () => {
@@ -24,7 +23,6 @@ const Header = () => {
       <div className="content__container flex-col lg:flex-row justify-between px-6 py-3 rounded-md bg-zinc-900/50 backdrop-blur-sm">
         <div className="flex flex-row items-center justify-between w-full lg:w-fit">
           <div className="flex items-center gap-2">
-            <img src={logo} alt="Логотип neito" className="size-8 animate-spin360twice" />
             <strong className="text-lg">neito.dev</strong>
           </div>
           <button
