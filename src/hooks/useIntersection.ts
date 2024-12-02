@@ -6,7 +6,10 @@ export const useIntersection = (ref: React.RefObject<Element>, rootMargin = '0px
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsVisible(entry.isIntersecting); // Отслеживаем, когда элемент появляется на экране
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
       },
       { rootMargin }
     );
@@ -17,9 +20,7 @@ export const useIntersection = (ref: React.RefObject<Element>, rootMargin = '0px
     }
 
     return () => {
-      if (current) {
-        observer.unobserve(current);
-      }
+      observer.disconnect();
     };
   }, [ref, rootMargin]);
 
