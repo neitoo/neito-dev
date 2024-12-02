@@ -10,19 +10,22 @@ const ProjectsList: React.FC = () => {
     }
 
     if (error) {
-        return <div>{error}</div>
+        return <div className="project__error">{error}</div>
     }
 
     return (
-        <div>
+        <div className="w-full flex flex-col">
             {projects.length === 0 ? (
-                <p>Проекты не найдены</p>
+                <div className="project__notfound">
+                    <p>Проекты не найдены</p>
+                </div>
             ) : (
-                <ul>
+                <ul className="w-full flex flex-col gap-6">
                     {projects.map((project) => (
-                        <li key={project.id}>
-                            <Link to={`/projects/${project.id}`}>
+                        <li key={project.id} className="project__block">
+                            <Link to={`/projects/${project.id}`} className="project__item">
                                 <h2>{project.name}</h2>
+                                <p>{project.description}</p>
                             </Link>
                         </li>
                     ))}
