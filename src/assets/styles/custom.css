@@ -33,19 +33,19 @@ body {
 }
 
 .list__skills {
-  @apply rounded-md overflow-hidden border border-zinc-900 flex w-full flex-col
+  @apply flex w-full flex-col text-base
 }
 
-.skill__image-block {
-  @apply flex justify-start bg-neutral-900 items-center flex-none p-5 gap-3
+.skill__block {
+  @apply flex justify-start items-center flex-none font-medium
 }
 
 .skills__names {
-  @apply flex gap-4 p-5 flex-wrap
+  @apply flex gap-4 py-5 flex-wrap
 }
 
 .skills__names li {
-  @apply flex-none uppercase before:content-["●"] before:mr-2 border border-zinc-800 bg-zinc-900 px-3 py-px rounded-full opacity-0
+  @apply font-medium flex-none uppercase border border-zinc-800 bg-zinc-900 px-3 py-px rounded-md opacity-0
 }
 
 #stars, #stars2, #stars3 {
@@ -64,4 +64,31 @@ body {
 }
 #stars3::after {
   @apply size-1 rounded-full
+}
+
+.project__error, .project__notfound, .project__block {
+  @apply w-full border border-neutral-800 rounded-md
+}
+
+.project__block {
+  @apply transition-all duration-200 hover:border-white hover:scale-105
+}
+
+.project__notfound {
+  @apply flex flex-col h-full p-5
+}
+.project__error {
+  @apply flex flex-col h-full p-5 !border-red-600 text-red-600
+}
+
+.project__item {
+  @apply flex flex-col w-full h-full p-5 gap-5
+}
+
+.project__item h2 {
+  @apply text-xl
+}
+
+.project__item p {
+  @apply text-gray-400
 }
