@@ -1,10 +1,6 @@
 import { CopyText } from "@components/copyText";
 import helloLogo from "@images/5006-mibored.png";
 
-import coding from "@images/code.svg";
-import tools from "@images/tools.svg";
-import addition from "@images/all.svg";
-
 import telegram from "@images/telegram.svg";
 import mail from "@images/mail.svg";
 import good from "@images/good-menhera.gif";
@@ -29,7 +25,7 @@ const Home = () => {
 
   return (
     <main className="main__container">
-      <section className="content__container h-screen pt-32">
+      <section className="content__container h-screen pt-32 animate-fade">
         <div className="flex flex-col w-full h-full">
           <div className="flex gap-2 flex-nowrap">
             <img
@@ -83,8 +79,7 @@ const Home = () => {
         <p className="text-3xl mb-12">Технологии в которых я разбираюсь</p>
         <ul className="flex flex-col gap-12 w-full">
           <li className="list__skills">
-            <div className="skill__image-block">
-              <img className="size-8" src={coding} alt="" />
+            <div className="skill__block">
               <strong>Программирование и языки разметки</strong>
             </div>
 
@@ -95,7 +90,7 @@ const Home = () => {
                   style={{
                     animationDelay: `${index * 100}ms`
                   }}
-                  className={`${isVisible1 ? 'animate-fadeUp' : ''}`}
+                  className={`${isVisible1 ? 'animate-fade' : ''}`}
                 >
                   {skill}
                 </li>
@@ -103,8 +98,7 @@ const Home = () => {
             </ul>
           </li>
           <li className="list__skills">
-            <div className="skill__image-block">
-              <img className="size-8" src={tools} alt="" />
+            <div className="skill__block">
               <strong>Фреймворки, библиотеки и инструменты разработки</strong>
             </div>
 
@@ -115,7 +109,7 @@ const Home = () => {
                   style={{
                     animationDelay: `${index * 100}ms`
                   }}
-                  className={`${isVisible2 ? 'animate-fadeUp' : ''}`}
+                  className={`${isVisible2 ? 'animate-fade' : ''}`}
                 >
                   {skill}
                 </li>
@@ -123,8 +117,7 @@ const Home = () => {
             </ul>
           </li>
           <li className="list__skills">
-            <div className="skill__image-block">
-              <img className="size-8" src={addition} alt="" />
+            <div className="skill__block">
               <strong>Инструменты и доп. навыки</strong>
             </div>
 
@@ -135,7 +128,7 @@ const Home = () => {
                   style={{
                     animationDelay: `${index * 100}ms`
                   }}
-                  className={`${isVisible3 ? 'animate-fadeUp' : ''}`}
+                  className={`${isVisible3 ? 'animate-fade' : ''}`}
                 >
                   {skill}
                 </li>
