@@ -8,12 +8,15 @@ export const useProjects = () => {
   const [error, setError] = useState<string|null>(null);
 
   useEffect(() => {
+    const controller = new AbortController();
+    const signal = controller.signal;
+
     const getProjects = async () => {
       setIsLoading(true);
       setError(null);
 
       try {
-        const data = await fetchProjectData();
+        const data = await fetchProjectData(signal);
         if (data && Array.isArray(data.projects)){
           setProjects(data.projects as IProject[]);
         } else {
@@ -26,7 +29,11 @@ export const useProjects = () => {
       }
     };
 
-    getProjects()
+    getProjects();
+
+    return () => {
+      controller.abort();
+    };
   }, []);
   
   return {projects, isLoading, error};
